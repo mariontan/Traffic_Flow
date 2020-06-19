@@ -7,7 +7,7 @@ class Logger(object):
 #         self.writer =tf.compat.v1.summary.FileWriter(log_dir)
         self.writer = tf.summary.create_file_writer(log_dir)
     
-    def scalar_summary(metric, val, step)
+    def scalar_summary(metric, val, step):
         tf.summary.scalar(metric, 0.5, step=step)
         self.writer.flush()
 #     def scalar_summary(self, tag, value, step):
